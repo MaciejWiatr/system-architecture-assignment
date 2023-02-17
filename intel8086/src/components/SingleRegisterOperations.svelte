@@ -59,7 +59,7 @@
           return r
         })
 
-        logOperation({ name: 'INC', a: registryA, b: '-1' })
+        logOperation({ name: 'DEC', a: registryA, b: '-1' })
       },
       withValue: false,
     },

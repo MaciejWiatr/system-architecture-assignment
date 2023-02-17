@@ -5,6 +5,7 @@
   export let value: string
   export let title: string
   export let valid: boolean
+  export let disabled: boolean = undefined
 
   const onChange: svelte.JSX.FormEventHandler<HTMLInputElement> = (e) => {
     valid = true
@@ -20,9 +21,10 @@
   <input
     on:input|preventDefault={onChange}
     on:blur={onChange}
-    {value}
-    class="input input-bordered w-12 h-8 px-2"
-    maxlength="2"
+    {disabled}
+    value={value.toUpperCase()}
+    class="input input-bordered w-14 h-8 px-2"
+    maxlength="3"
     class:border-red-500={!valid}
   />
 </div>

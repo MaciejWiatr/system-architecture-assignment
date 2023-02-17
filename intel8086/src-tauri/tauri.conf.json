@@ -58,10 +58,10 @@
         "decorations": false,
         "transparent": true,
         "fullscreen": false,
-        "height": 400,
+        "height": 500,
         "resizable": false,
         "title": "intel8086",
-        "width": 650
+        "width": 680
       }
     ]
   }
